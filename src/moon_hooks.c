@@ -132,18 +132,6 @@ RECOMP_PATCH void EnFall_Moon_Draw(Actor* thisx, PlayState* play) {
     CLOSE_DISPS(play->state.gfxCtx);
 }
 
-RECOMP_PATCH void EnFall_LodMoon_Draw(Actor* thisx, PlayState* play) {
-    s32 pad;
-    EnFall* this = THIS;
-    s32 primColor;
-
-    OPEN_DISPS(play->state.gfxCtx);
-
-    EnFall_RandoDraw(this, play);
-
-    CLOSE_DISPS(play->state.gfxCtx);
-}
-
 RECOMP_PATCH void EnFall_OpenMouthMoon_Draw(Actor* thisx, PlayState* play) {
     EnFall* this = THIS;
     s32 primColor;
